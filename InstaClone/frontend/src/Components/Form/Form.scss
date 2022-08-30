@@ -1,0 +1,76 @@
+$laptop:950px;
+$tablet:700px;
+$mobile:480px;
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    form{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        border: 1px solid black;
+        width: 30vw;
+        @media screen and (max-width:$laptop) {
+            width: 50vw;
+        }
+        @media screen and (max-width:$tablet) {
+            width: 60vw;
+        }
+        @media screen and (max-width:$mobile) {
+            width: 70vw;
+        }
+        .first-row{
+            display: flex;
+            margin-bottom: 20px;
+            align-items: center;
+            span{
+                width: 300px;
+                padding: 2px;
+                font-size: medium;
+                border: 1px solid black;
+                margin-right: 15px;
+            }
+            label{
+                input{
+                    display: none;
+                }
+                span{
+                    border: 1px solid black;
+                    border-radius: 5px;
+                    background-color: rgb(237, 236, 236);
+                }
+            }
+       }
+       .second-row{
+            display: flex;
+            margin-bottom: 20px;
+            justify-content: space-between;
+            input{
+                width: 200px;
+                @media screen and (max-width:$mobile) {
+                    width: 100px;
+                }
+            }
+       }
+       .third-row{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+            input{
+                width: 300px;
+            }
+       }
+       .fourth-row{
+            margin: 0 auto;
+            button{
+                padding: 2px 20px;
+                border-radius: 5px;
+                border: 1px solid black;
+            }
+       }
+    }
+}
+

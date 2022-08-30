@@ -1,0 +1,21 @@
+.paginate{
+    display:flex;
+    width: 100vw;
+    .paginateWrapper{
+        display: flex;
+        margin:10vh auto;
+        img{
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        .number{
+            text-align: center;
+            border:1px solid;
+            width:20px;
+            cursor: pointer;
+            &:hover{
+                background-color: rgb(196, 194, 194);
+            }
+        }
+    }
+}

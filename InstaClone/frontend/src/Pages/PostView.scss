@@ -1,0 +1,12 @@
+$tablet:700px;
+$mobile:480px;
+.parent{
+    margin-top:15vh;
+    display:grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    row-gap: 10vh;
+    @media screen and (max-width:$tablet) {
+        grid-template-columns: auto;
+    }
+}
